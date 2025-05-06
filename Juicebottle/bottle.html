@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luxury Juice Bottles</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fef6f0; 
+      color: #333;
+    }
+
+    header {
+      background: #0a0a0a;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(7, 6, 6);
+    }
+
+    header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white; /* changed to white */
+}
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff9966;
+    }
+
+    .intro {
+      padding: 60px 50px;
+      background: linear-gradient(to right, #fddcc7, #ffffff); /* soft peach gradient */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: 36px;
+      color: black; /* black heading */
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    .carousel-container {
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+    }
+
+    .carousel {
+      perspective: 1200px;
+      width: 300px;
+      height: 400px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: rotate 20s infinite linear;
+    }
+
+    .carousel img {
+      width: 250px;
+      height: 350px;
+      position: absolute;
+      top: 0;
+      left: 25px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .carousel img:nth-child(1) { transform: rotateY(0deg) translateZ(400px); }
+    .carousel img:nth-child(2) { transform: rotateY(72deg) translateZ(400px); }
+    .carousel img:nth-child(3) { transform: rotateY(144deg) translateZ(400px); }
+    .carousel img:nth-child(4) { transform: rotateY(216deg) translateZ(400px); }
+    .carousel img:nth-child(5) { transform: rotateY(288deg) translateZ(400px); }
+
+    @keyframes rotate {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(360deg); }
+    }
+
+    section#contact {
+      background: #1b1b1b;
+      color: white;
+      padding: 50px;
+      text-align: center;
+    }
+
+    section#contact h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    section#contact p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Juice Royale</h1>
+    <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+  </header>
+
+  <section class="intro" id="about">
+    <h2>Experience Nature’s Luxury</h2>
+    <p>
+      Welcome to <strong>Juice Royale</strong> where innovation meets elegance. Our premium smart bottles are designed not just to carry your drink, but to elevate your hydration experience. With sleek dual-sided design, smart tracking features, and an eye for modern wellness, this is more than a bottle — it’s a statement. Stay balanced. Stay you.
+    </p>
+  </section>
+
+  <section id="products" class="carousel-container">
+    <div class="carousel">
+      <img src="ChatGPT 1.png" alt="Juice 1" />
+      <img src="ChatGPT image 2.png" alt="Juice 2" />
+      <img src="plot.jpg" alt="Juice 3" />
+      <img src="proto.jpg" alt="Juice 4" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@juiceroyale.com<br/>
+    Phone: +91 8427510385<br/>
+    Location: Jalandhar, India</p>
+  </section>
+  <!-- Add this just before the closing </body> tag -->
+
+<section id="founders" style="background-color: #fff0e6; padding: 60px 20px; text-align: center;">
+    <h2 style="font-size: 30px; color: black; margin-bottom: 40px;">Meet the Founders</h2>
+    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+      
+      <div style="max-width: 200px;">
+        <img src="mitchelle.jpg" alt="Mitchelle Mambwerere" style="width: 100%; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);"/>
+        <h3 style="margin-top: 15px; font-size: 18px; color: black;">Mitchelle Mambwerere</h3>
+      </div>
+  
+      <div style="max-width: 200px;">
+        <img src="mederleen.jpg" alt="Mederleen Chiwaramakanda" style="width: 100%; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);"/>
+        <h3 style="margin-top: 15px; font-size: 18px; color: black;">Mederleen Chiwaramakanda</h3>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <footer>
+    &copy; 2025 Juice Royale. All rights reserved.
+  </footer>
+
+</body>
+</html>

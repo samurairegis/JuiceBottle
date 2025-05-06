@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Juice Royale</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff9f4;
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      background: #1b1b1b;
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff9966;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 22px;
+      color: #444;
+      margin-top: 30px;
+    }
+
+    h4 {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .summary-table {
+      overflow-x: auto;
+      margin-top: 30px;
+    }
+
+    .summary-table table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+    }
+
+    .summary-table th, .summary-table td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .summary-table th {
+      background-color: #f9d7b5;
+      color: #222;
+    }
+
+    .tagline {
+      background: #fff2e5;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .feasibility-toggle {
+      background-color: #ff9966;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      font-size: 18px;
+      margin: 30px 0;
+      cursor: pointer;
+      border-radius: 8px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .feasibility-content {
+      display: none;
+      padding: 20px;
+      background: #fff0e0;
+      border-radius: 10px;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .feasibility-content img {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    footer {
+      background: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Juice Royale</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="tagline">
+    Fuel Both Sides of You.<br>One smart bottle, two sides, designed to track your sips and carry your day — effortlessly
+  </div>
+
+  <section>
+    <h2>Our Story: A Bottle That Balances You</h2>
+    <p>It started with something simple — a headache, dry lips, sluggish afternoons.  
+    Not from exhaustion, but from forgetting to drink water.</p>
+
+    <p>Between chasing goals, answering emails, studying, working out, and just living, we saw how easy it was to put hydration last. Not because we didn’t care, but because life gets busy — and wellness takes the hit.</p>
+
+    <p>That moment sparked an idea:  
+    What if your bottle could care for you, the way you care for everything else?</p>
+
+    <p>So we set out to build more than a bottle.  
+    We created a smart, two-sided companion designed for the rhythm of real life.</p>
+
+    <p>Because you’re not one-dimensional — and your bottle shouldn’t be either.</p>
+
+    <p>It’s not just about hydration.  
+    It’s about honoring both sides of you — the go-getter and the soul-soother.</p>
+
+    <p>With intuitive reminders and sleek dual design, this isn’t just a product. It’s a statement:  
+    You deserve balance. You deserve to feel good. You deserve to be both.</p>
+
+    <p>This is more than a bottle.  
+    It’s a lifestyle. A mindset. A sip toward showing up fully — for yourself.</p>
+
+    <p><strong>Two sides. One you.  
+    Stay balanced. Stay you.</strong></p>
+
+    <!-- Dropdown toggle button -->
+    <button class="feasibility-toggle" onclick="toggleFeasibility()">▶ TECHNICAL FEASIBILITY: Encouraging Real Hydration, Not Just Reminders</button>
+
+    <!-- Collapsible content -->
+    <div class="feasibility-content" id="feasibilityContent">
+      <img src="plot.jpg" alt="Smart Bottle Prototype">
+      <p>Most smart bottles stop at reminders. Ours goes further.  
+      To make sure users actually drink, we’re designing with behavior, feedback loops, and smart detection in mind.</p>
+
+      <h3>Here’s how:</h3>
+
+      <h4>1. Sip Detection System (Core Feature)</h4>
+      <ul>
+        <li>Weight sensors (in base) to detect liquid level changes.</li>
+        <li>Flow sensors to track water movement when drinking.</li>
+        <li>Tilt sensors to sense drinking motion.</li>
+        <li><em>Optional:</em> Infrared sensors to track volume pre/post use.</li>
+      </ul>
+
+      <h4>2. Behavioral Nudge System</h4>
+      <ul>
+        <li>Smartphone notifications with progress reports.</li>
+        <li>Gentle bottle lighting if ignored (visual cue).</li>
+        <li>Gamification — badges or streak rewards via the app.</li>
+      </ul>
+
+      <h4>3. Hydration Accountability (Optional Premium Feature)</h4>
+      <ul>
+        <li>Group challenges with friends/family sync.</li>
+        <li>Daily hydration summary via app or wearable.</li>
+        <li><em>Optional:</em> Voice assistant integration for coaching.</li>
+      </ul>
+
+      <h4>4. Limited Snoozes</h4>
+      <ul>
+        <li>Max 3 snoozes per reminder.</li>
+        <li>Canceling a reminder requires proof of drink via sensors.</li>
+      </ul>
+
+      <div class="summary-table">
+        <!-- Dropdown toggle button -->
+<button class="feasibility-toggle" onclick="toggleChallenges()">▶ CHALLENGES & SOLUTIONS: Designing for Real-World Use</button>
+
+<!-- Collapsible content -->
+<div class="feasibility-content" id="challengesContent">
+  <h3>1. People Ignore Reminders or Snooze Them</h3>
+  <p><strong>Why it matters:</strong> Your goal is to improve hydration, not just send notifications.</p>
+  <p><strong>Solution:</strong></p>
+  <ul>
+    <li>Use sip detection sensors to verify real drinking.</li>
+    <li>Integrate gamified hydration goals (streaks, badges).</li>
+    <li>Offer friendly reminders ("Hydration = energy. Take a sip ☀") with limited snoozes.</li>
+  </ul>
+
+  <h3>2. Accurate Detection of Drinking</h3>
+  <p><strong>Why it matters:</strong> You need to track real water intake, not just movement or bottle use.</p>
+  <p><strong>Solution:</strong></p>
+  <ul>
+    <li>Use a combo of tilt sensors + weight change detection or flow sensors.</li>
+    <li>Calibrate to ignore false signals (like shaking or opening without sipping).</li>
+  </ul>
+
+  <h3>3. Battery Draining Too Quickly</h3>
+  <p><strong>Why it matters:</strong> Frequent charging makes the product inconvenient and less appealing.</p>
+  <p><strong>Solution:</strong></p>
+  <ul>
+    <li>Use low-energy Bluetooth (BLE) and auto-sleep mode.</li>
+    <li>Design with USB-C charging or explore solar-assist panels on the cap.</li>
+  </ul>
+
+  <h3>4. High Manufacturing Costs</h3>
+  <p><strong>Why it matters:</strong> Complex design (sensors, insulation, dual-lid) can raise unit cost, affecting pricing and margins.</p>
+  <p><strong>Solution:</strong></p>
+  <ul>
+    <li>Start with a basic model (manual reminder + dual compartments).</li>
+    <li>Offer the smart tech as a detachable upgrade module.</li>
+    <li>Use crowdfunding or pre-orders to validate demand before scaling.</li>
+  </ul>
+
+  <h3>5. Educating Users on How to Use the Smart Features Effectively</h3>
+  <p><strong>Why it matters:</strong> People often get overwhelmed or confused by smart tech.</p>
+  <p><strong>Solution:</strong></p>
+  <ul>
+    <li>Create a super-simple onboarding experience: short video demos, in-app walkthroughs, and FAQs.</li>
+    <li>Use visual indicators — so the tech works even if the app isn’t open.</li>
+    <li>Offer a “lite” mode for users who don’t want to use the app every day but still want reminders.</li>
+  </ul>
+</div>
+
+        <h3>🛠 In Summary:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Tech Used</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sip detection</td>
+              <td>Weight, flow, or tilt sensors</td>
+              <td>Verify real water intake</td>
+            </tr>
+            <tr>
+              <td>Smart reminders</td>
+              <td>App + bottle LED feedback</td>
+              <td>Nudge behavior, reduce snoozing</td>
+            </tr>
+            <tr>
+              <td>Gamification</td>
+              <td>App-based badges and streak tracking</td>
+              <td>Encourage consistent use</td>
+            </tr>
+            <tr>
+              <td>Accountability options</td>
+              <td>Sync with friends or progress tracking</td>
+              <td>Make hydration social/fun</td>
+            </tr>
+            <tr>
+              <td>Adaptive goals</td>
+              <td>AI/pattern tracking</td>
+              <td>Personalize hydration plans</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Juice Royale. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleFeasibility() {
+      const content = document.getElementById("feasibilityContent");
+      const button = document.querySelector(".feasibility-toggle");
+
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        button.textContent = "▶ TECHNICAL FEASIBILITY: Encouraging Real Hydration, Not Just Reminders";
+      } else {
+        content.style.display = "block";
+        button.textContent = "▼ TECHNICAL FEASIBILITY: Encouraging Real Hydration, Not Just Reminders";
+      }
+    }
+  </script>
+  <script>
+    function toggleFeasibility() {
+      const content = document.getElementById("feasibilityContent");
+      const button = document.querySelector(".feasibility-toggle");
+  
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        button.textContent = "▶ TECHNICAL FEASIBILITY: Encouraging Real Hydration, Not Just Reminders";
+      } else {
+        content.style.display = "block";
+        button.textContent = "▼ TECHNICAL FEASIBILITY: Encouraging Real Hydration, Not Just Reminders";
+      }
+    }
+  
+    function toggleChallenges() {
+      const content = document.getElementById("challengesContent");
+      const button = document.querySelectorAll(".feasibility-toggle")[1];
+  
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        button.textContent = "▶ CHALLENGES & SOLUTIONS: Designing for Real-World Use";
+      } else {
+        content.style.display = "block";
+        button.textContent = "▼ CHALLENGES & SOLUTIONS: Designing for Real-World Use";
+      }
+    }
+  </script>
+  
+</body>
+</html>
