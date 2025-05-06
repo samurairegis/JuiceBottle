@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Juice Royale</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('background1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Add overlay for visibility */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      z-index: 0;
+    }
+
+    h1, p, a.button {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 40px;
+      max-width: 600px;
+    }
+
+    a.button {
+      padding: 14px 28px;
+      background-color: #ff9966;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #e67e45;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Juice Royale</h1>
+  <p>Your smart hydration companion is here to fuel both sides of you. Ready to explore?</p>
+
+  <a href="bottle.html" class="button">Home</a>
+
+</body>
+</html>
